@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tất cả sản phẩm linh kiện máy tính chính hãng từ PC Tôi Yêu.">
+    <meta name="keywords" content="sản phẩm, linh kiện máy tính, PC gaming, CPU, RAM, mainboard, card đồ họa">
+    <meta name="author" content="PC Tôi Yêu">
+    <title>Tất Cả Sản Phẩm | PC Tôi Yêu</title>
+    <link rel="stylesheet" href="products.css"> <!-- Đường dẫn đến file CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <form class="search-form" action="search.html" method="GET">
+            <input type="text" name="q" placeholder="Tìm kiếm sản phẩm...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <div class="logo"><script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+            <a href="index.html"><img src="logo.png" alt="Logo PC Tôi Yêu"></a>
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="blog.html">Tin Tức</a></li>
+                <li><a href="about.html">Về Chúng Tôi</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+ 
+
+    <!-- Product Filters (Optional) -->
+    <section class="product-filters">
+        <div class="filter-item">
+            <label for="category">Chọn Danh Mục</label>
+            <select id="category">
+                <option value="cpu">CPU</option>
+                <option value="gpu">Card Đồ Họa</option>
+                <option value="ram">RAM</option>
+                <option value="mainboard">Mainboard</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <label for="price-range">Chọn Khoảng Giá</label>
+            <select id="price-range">
+                <option value="0-5000000">Dưới 5,000,000 VND</option>
+                <option value="5000000-10000000">5,000,000 VND - 10,000,000 VND</option>
+                <option value="10000000-20000000">10,000,000 VND - 20,000,000 VND</option>
+                <option value="20000000">Trên 20,000,000 VND</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="product-list">
+        <h2>Tất Cả Sản Phẩm</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="cpu.png" alt="CPU Ryzen 7 5800X">
+                <h3>CPU Ryzen 7 5800X</h3>
+                <p>Giá: 7,990,000 VND</p>
+                <a href="cpu.html" class="btn">Xem Chi Tiết</a>
+            </div>
+            <div class="product-item">
+                <img src="gpu.png" alt="Card Đồ Họa RTX 3060">
+                <h3>Card Đồ Họa RTX 3060</h3>
+                <p>Giá: 10,500,000 VND</p>
+                <a href="gpu.html" class="btn">Xem Chi Tiết</a>
+            </div>
+            <div class="product-item">
+                <img src="ram.png" alt="RAM 16GB DDR4">
+                <h3>RAM 16GB DDR4</h3>
+                <p>Giá: 1,990,000 VND</p>
+                <a href="ram.html" class="btn">Xem Chi Tiết</a>
+            </div>
+            <div class="product-item">
+                <img src="mainboard.png" alt="Mainboard ASUS ROG Strix">
+                <h3>Mainboard ASUS ROG Strix</h3>
+                <p>Giá: 5,500,000 VND</p>
+                <a href="mainboard.html" class="btn">Xem Chi Tiết</a>
+            </div>
+        </div>
+        <!-- Thêm các sản phẩm khác ở đây -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Về Chúng Tôi</h3>
+                <p>PC Tôi Yêu chuyên cung cấp các linh kiện máy tính chính hãng với chất lượng cao và giá cả cạnh tranh.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Liên Kết Nhanh</h3>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="blog.html">Tin Tức</a></li>
+                </ul>
+            </div>
+           <!-- Thông tin liên hệ -->
+           <div class="footer-contact">
+            <h3>Liên Hệ</h3>
+            <p>Email: lienhe@pctoiy.eu.vn</p>
+            <p>Hotline: 0909 999 999</p>
+            <form class="newsletter-form" action="subscribe.html" method="POST">
+                <input type="email" placeholder="Nhập email của bạn..." required>
+                <button type="submit">Đăng Ký</button>
+            </form>
+        </div>
+            
+        </div>
+        <p class="copyright">© 2024 PC Tôi Yêu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

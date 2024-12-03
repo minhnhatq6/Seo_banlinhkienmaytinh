@@ -1,0 +1,282 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1a73e8;
+    color: #fff;
+}
+
+header .logo img {
+    max-height: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f9f9f9;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* So Sánh Card Đồ Họa */
+.comparison-section {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.comparison-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1a73e8;
+}
+
+.comparison-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+/* Bảng so sánh */
+.comparison-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: #1a73e8;
+    color: #fff;
+}
+
+.comparison-table td {
+    background-color: #f4f4f4;
+}
+
+/* Phân tích hiệu suất */
+.performance {
+    margin-top: 30px;
+}
+
+.performance h2 {
+    font-size: 1.5rem;
+    color: #1a73e8;
+}
+
+.performance p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+/* Giá trị và kết luận */
+.pricing,
+.summary {
+    margin-top: 30px;
+}
+
+.pricing h2,
+.summary h2 {
+    font-size: 1.5rem;
+    color: #1a73e8;
+}
+
+.pricing p,
+.summary p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+/* Button Khám Phá Sản Phẩm */
+.btn {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0049b7;
+    transform: scale(1.05);
+}
+
+/* Footer tổng thể */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-about,
+footer .footer-links,
+footer .footer-contact {
+    flex: 1 1 300px;
+    padding: 10px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer p,
+footer ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #3498db;
+}
+
+footer .footer-contact p {
+    margin: 5px 0;
+}
+
+/* Dòng bản quyền */
+footer .copyright {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #bdc3c7;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 10px;
+}
+
+/* Form đăng ký nhận tin */
+footer .newsletter-form {
+    margin-top: 15px;
+}
+
+footer .newsletter-form input {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+footer .newsletter-form button {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .newsletter-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Chỉnh sửa kích thước ảnh trong bài viết */
+.post-image {
+    width: 100%;  /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của container */
+    max-width: 600px; /* Giới hạn kích thước tối đa của ảnh */
+    height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+    margin: 20px 0; /* Tạo khoảng cách trên và dưới ảnh */
+    display: block; /* Đảm bảo ảnh được căn giữa */
+    border-radius: 8px;
+    object-fit: contain; /* Đảm bảo ảnh không bị biến dạng */
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .comparison-section h1 {
+        font-size: 1.6rem;
+    }
+    .comparison-section p {
+        font-size: 1rem;
+    }
+    .comparison-table th, .comparison-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    .post-image {
+        width: 90%; /* Giảm kích thước ảnh ở màn hình di động nhưng không quá nhỏ */
+        max-width: 90%; /* Hình ảnh sẽ tự động co lại */
+    }
+}

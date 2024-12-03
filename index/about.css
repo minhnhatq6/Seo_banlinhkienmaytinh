@@ -1,0 +1,288 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1a73e8;
+    color: #fff;
+}
+
+header .logo img {
+    max-height: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f9f9f9;
+}
+
+/* Banner cho trang About */
+.banner {
+    position: relative;
+    text-align: center;
+    color: #4b2cd4;
+    padding: 40px 0;
+    background-color: #e1e8f0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner-text .btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.banner-text .btn:hover {
+    background: #e64a19;
+}
+
+/* Section về chúng tôi */
+.about-us {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #1a73e8;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #1a73e8;
+}
+
+.about-us .team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #888;
+}
+
+/* Liên hệ */
+.about-us .contact-info {
+    margin-top: 40px;
+}
+
+.about-us .contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us .contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Footer tổng thể */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-about,
+footer .footer-links,
+footer .footer-contact {
+    flex: 1 1 300px;
+    padding: 10px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer p,
+footer ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #3498db;
+}
+
+/* Liên kết trong footer */
+footer .footer-contact p {
+    margin: 5px 0;
+}
+
+/* Dòng bản quyền */
+footer .copyright {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #bdc3c7;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 10px;
+}
+
+/* Form đăng ký nhận tin */
+footer .newsletter-form {
+    margin-top: 15px;
+}
+
+footer .newsletter-form input {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+footer .newsletter-form button {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .newsletter-form button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Chuyển logo và menu về dạng cột */
+        text-align: center;
+    }
+    .product-item h3 {
+        font-size: 1.2rem; /* Giảm kích thước tiêu đề sản phẩm trên điện thoại */
+    }
+    .product-item p {
+        font-size: 1rem;
+    }
+}
+

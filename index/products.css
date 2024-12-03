@@ -1,0 +1,264 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1a73e8;
+    color: #fff;
+}
+
+header .logo img {
+    max-height: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f9f9f9;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: #4b2cd4;
+    padding: 40px 0;
+    background-color: #e1e8f0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner-text .btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.banner-text .btn:hover {
+    background: #e64a19;
+}
+
+/* Bộ lọc sản phẩm */
+.product-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.filter-item {
+    flex: 1 1 30%;
+    margin-bottom: 15px;
+}
+
+.filter-item label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.filter-item select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.product-list h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #1a73e8;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ff5722;
+}
+
+.product-item .btn {
+    background: #1a73e8;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.product-item .btn:hover {
+    background: #0049b7;
+}
+
+/* Footer tổng thể */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-about,
+footer .footer-links,
+footer .footer-contact {
+    flex: 1 1 300px;
+    padding: 10px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer p,
+footer ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #3498db;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #bdc3c7;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 10px;
+}
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Chuyển logo và menu về dạng cột */
+        text-align: center;
+    }
+    .product-item h3 {
+        font-size: 1.2rem; /* Giảm kích thước tiêu đề sản phẩm trên điện thoại */
+    }
+    .product-item p {
+        font-size: 1rem;
+    }
+}
